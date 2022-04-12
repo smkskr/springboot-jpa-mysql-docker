@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "ac020f1d-a9ac-47b2-8a85-cfae0b2a11c5",
+		"name": "workmotion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\":\"Shailly\",\n    \"lastName\" :\"Sarkar\",\n    \"age\":\"31\",\n    \"contractInformation\":\"24\",\n    \"statusId\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "/employeeStatus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"empId\":6,\n    \"status\":\"ACTIVE\",\n    \"subStatus\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employeeStatus",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employeeStatus"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
